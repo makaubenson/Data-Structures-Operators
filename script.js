@@ -27,3 +27,9 @@ const restaurant = {
     },
   },
 };
+
+const arr = [2, 3, 4];
+//Normal way of retriveing arrays
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
