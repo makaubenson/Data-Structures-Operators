@@ -58,10 +58,17 @@ console.log(a, b);
 
 const { fri } = openingHours;
 console.log(fri);
+
+// const {
+//   fri: { open, close },
+// } = openingHours;
+// console.log(open, close);
+
+//Assigning destructred values to variables
 const {
-  fri: { open, close },
+  fri: { open: o, close: c },
 } = openingHours;
-console.log(open, close);
+console.log(o, c);
 /*
 // const arr = [2, 3, 4];
 // //Normal way of retriveing arrays
