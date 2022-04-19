@@ -12,6 +12,9 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
   openingHours: {
     thu: {
       open: 12,
@@ -28,16 +31,16 @@ const restaurant = {
   },
 };
 
-const arr = [2, 3, 4];
-//Normal way of retriveing arrays
-const a = arr[0];
-const b = arr[1];
-const c = arr[2];
+// const arr = [2, 3, 4];
+// //Normal way of retriveing arrays
+// const a = arr[0];
+// const b = arr[1];
+// const c = arr[2];
 
-//Destructing
-const [x, y, z] = arr;
-console.log(x, y, z);
-console.log(arr);
+// //Destructing
+// const [x, y, z] = arr;
+// console.log(x, y, z);
+// console.log(arr);
 
 // const [first, second] = restaurant.categories;
 // console.log(first, second);//Italian Pizzeria
@@ -59,3 +62,9 @@ console.log(main, secondary); //Italian Vegetarian
 //Method 2: Using Destructing
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
+
+console.log(restaurant.order(2, 0));
+
+//Destructing: Reeceive 2 return values from a function
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
