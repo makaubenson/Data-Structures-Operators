@@ -34,6 +34,13 @@ const restaurant = {
 //Destructing Objects
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
+
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
 /*
 // const arr = [2, 3, 4];
 // //Normal way of retriveing arrays
