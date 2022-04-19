@@ -39,5 +39,9 @@ const [x, y, z] = arr;
 console.log(x, y, z);
 console.log(arr);
 
-const [first, second] = restaurant.categories;
-console.log(first, second);
+// const [first, second] = restaurant.categories;
+// console.log(first, second);//Italian Pizzeria
+
+// Retrieve the third value without retreiving the 2nd
+const [first, , third] = restaurant.categories;
+console.log(first, third); //Italian Vegetarian
