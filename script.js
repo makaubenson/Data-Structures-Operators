@@ -43,5 +43,19 @@ console.log(arr);
 // console.log(first, second);//Italian Pizzeria
 
 // Retrieve the third value without retreiving the 2nd
-const [first, , third] = restaurant.categories;
-console.log(first, third); //Italian Vegetarian
+// const [first, , third] = restaurant.categories;
+// console.log(first, third); //Italian Vegetarian
+
+//Switching Array Values to opposite indexes
+let [main, , secondary] = restaurant.categories;
+console.log(main, secondary); //Italian Vegetarian
+
+//Method 1: The old way
+// const temp = main;
+// main = secondary;
+// secondary = temp;
+// console.log(main, secondary);
+
+//Method 2: Using Destructing
+[main, secondary] = [secondary, main];
+console.log(main, secondary);
