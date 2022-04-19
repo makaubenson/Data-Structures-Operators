@@ -42,8 +42,26 @@ const {
 } = restaurant;
 console.log(restaurantName, hours, tags);
 
+//default values
 const { menu = [], starterMenu: starters = [] } = restaurant;
 console.log(menu, starters);
+
+//Mutating Variables while destructing objects
+let a = 111;
+let b = 999;
+
+const obj = { a: 23, b: 7, c: 14 };
+({ a, b } = obj);
+console.log(a, b);
+
+//Nested Objects: Retrive opening and closing hours from fri object which is nested inside other object
+
+const { fri } = openingHours;
+console.log(fri);
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close);
 /*
 // const arr = [2, 3, 4];
 // //Normal way of retriveing arrays
