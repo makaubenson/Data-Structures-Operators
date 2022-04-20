@@ -96,7 +96,7 @@ const newRestaurant = { foundingIn: 1998, ...restaurant, founder: 'Guissepe' };
 console.log(newRestaurant);
 
 const restaurantCopy = { ...restaurant };
-restaurantCopy.name ="Ristorante Roma";
+restaurantCopy.name = 'Ristorante Roma';
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
 //Destructing Objects
