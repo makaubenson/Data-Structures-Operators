@@ -20,5 +20,8 @@
 - Used where values are needed in comma separated list.
 - Spread operator works on all iterables (arrays,strings,maps,sets BUT NOT OBJECTS).
 - We can only use spread operator when:
+
   - Building a new array.
   - Passing values to a function.
+
+- Sinc ES2018 the spread operator works on objects despite that it is not an iterable.

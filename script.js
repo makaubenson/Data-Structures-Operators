@@ -81,13 +81,24 @@ console.log(menu);
 const str = 'Benson';
 const letters = [...str, ' ', 'S.'];
 console.log(letters);
-const ingredients = [
-  prompt("Let's make pasta! Ingredient 1?"),
-  prompt("Let's make pasta! Ingredient 2?"),
-  prompt("Let's make pasta! Ingredient 3?"),
-];
-console.log(ingredients);
-restaurant.orderPasta(...ingredients);
+
+// Real World Example
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1?"),
+//   prompt("Let's make pasta! Ingredient 2?"),
+//   prompt("Let's make pasta! Ingredient 3?"),
+// ];
+// console.log(ingredients);
+// restaurant.orderPasta(...ingredients);
+
+// Spread OPerator on Objects
+const newRestaurant = { foundingIn: 1998, ...restaurant, founder: 'Guissepe' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name ="Ristorante Roma";
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
 //Destructing Objects
 // const { name, openingHours, categories } = restaurant;
 // console.log(name, openingHours, categories);
