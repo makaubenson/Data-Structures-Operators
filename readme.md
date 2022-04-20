@@ -9,3 +9,10 @@
 ## Destructing Objects
 
 - We use curly braces({})
+
+## The spread operator (...)
+
+- Lets say we have the array `const arr = [7, 8, 9];`
+- To use spread operator, it would be `const newArr = [1, 2, ...arr];`
+- `console.log(newArr);`
+- The spread operator takes all values out of array and write them individually.

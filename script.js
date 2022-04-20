@@ -59,6 +59,10 @@ console.log(badNewArr);
 //Using the spread operator
 const newArr = [1, 2, ...arr];
 console.log(newArr);
+console.log(...newArr); // 1,2,7,8,9
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
 //Destructing Objects
 // const { name, openingHours, categories } = restaurant;
 // console.log(name, openingHours, categories);
