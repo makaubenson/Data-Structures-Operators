@@ -18,3 +18,4 @@
 - The spread operator takes all values out of array and write them individually.
 - Does not create new variables
 - Used where values are needed in comma separated list.
+- Spread operator works on all iterables (arrays,strings,maps,sets BUT NOT OBJECTS).

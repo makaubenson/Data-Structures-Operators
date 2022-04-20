@@ -68,7 +68,14 @@ console.log(newMenu);
 const mainMenuCopy = [...restaurant.mainMenu];
 console.log(mainMenuCopy);
 
+//Join 2 arrays
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
 
+// Spread operator on string
+const str = 'Benson';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
 //Destructing Objects
 // const { name, openingHours, categories } = restaurant;
 // console.log(name, openingHours, categories);
@@ -114,7 +121,7 @@ console.log(mainMenuCopy);
 // const b = arr[1];
 // const c = arr[2];
 
-// //Destructing
+// //Destructing Arrays
 // const [x, y, z] = arr;
 // console.log(x, y, z);
 // console.log(arr);
