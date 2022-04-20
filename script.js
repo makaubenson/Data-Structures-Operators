@@ -66,9 +66,27 @@ const [pizza, , risotto, ...otherFood] = [
   ...restaurant.starterMenu,
 ];
 console.log([pizza, risotto, otherFood]);
+
 //Objects
 const { sat, ...weekdays } = restaurant.openingHours;
 console.log(weekdays);
+
+// Functions
+//Rest Arguments
+const add = function (...numbers) {
+  // console.log(numbers);
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum = sum + numbers[i];
+    console.log(sum);
+  }
+};
+//calling the function
+
+add(2, 3);
+add(5, 3, 7, 2, 4);
+const x = [23, 5, 7];
+add(...x);
 /*
 // The Spread Operator
 const arr = [7, 8, 9];
