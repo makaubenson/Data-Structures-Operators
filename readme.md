@@ -25,3 +25,12 @@
   - Passing values to a function.
 
 - Sinc ES2018 the spread operator works on objects despite that it is not an iterable.
+
+# Rest Patterns and Parameters
+
+- Rest Operator Collects multiple values and condenses them into an array.
+- Its the opposite of spread operator.
+- `const [a, b, ...others] = [1, 2, 3, 4, 5];` Its rest operator since its on the left site of the assignment operator(=)
+- Takes remaining elements of an array and puts them in a new array.
+- It takes all the values after the last element. It does not include the skipped elements.
+- The Rest element must be the last element on the destructuring syntax.

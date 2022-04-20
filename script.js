@@ -56,6 +56,16 @@ restaurant.orderDelivery({
   starterIndex: 1,
 });
 
+// Rest Patterns and Parameters
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log([pizza, risotto, otherFood]);
+/*
 // The Spread Operator
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
@@ -83,13 +93,13 @@ const letters = [...str, ' ', 'S.'];
 console.log(letters);
 
 // Real World Example
-// const ingredients = [
-//   prompt("Let's make pasta! Ingredient 1?"),
-//   prompt("Let's make pasta! Ingredient 2?"),
-//   prompt("Let's make pasta! Ingredient 3?"),
-// ];
-// console.log(ingredients);
-// restaurant.orderPasta(...ingredients);
+const ingredients = [
+  prompt("Let's make pasta! Ingredient 1?"),
+  prompt("Let's make pasta! Ingredient 2?"),
+  prompt("Let's make pasta! Ingredient 3?"),
+];
+console.log(ingredients);
+restaurant.orderPasta(...ingredients);
 
 // Spread OPerator on Objects
 const newRestaurant = { foundingIn: 1998, ...restaurant, founder: 'Guissepe' };
@@ -99,45 +109,46 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = 'Ristorante Roma';
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+
 //Destructing Objects
-// const { name, openingHours, categories } = restaurant;
-// console.log(name, openingHours, categories);
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
 
-// const {
-//   name: restaurantName,
-//   openingHours: hours,
-//   categories: tags,
-// } = restaurant;
-// console.log(restaurantName, hours, tags);
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
 
-// //default values
-// const { menu = [], starterMenu: starters = [] } = restaurant;
-// console.log(menu, starters);
+//default values
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
 
-//Mutating Variables while destructing objects
-// let a = 111;
-// let b = 999;
+Mutating Variables while destructing objects
+let a = 111;
+let b = 999;
 
-// const obj = { a: 23, b: 7, c: 14 };
-// ({ a, b } = obj);
-// console.log(a, b);
+const obj = { a: 23, b: 7, c: 14 };
+({ a, b } = obj);
+console.log(a, b);
 
 //Nested Objects: Retrive opening and closing hours from fri object which is nested inside other object
 
-// const { fri } = openingHours;
-// console.log(fri);
+const { fri } = openingHours;
+console.log(fri);
 
-// const {
-//   fri: { open, close },
-// } = openingHours;
-// console.log(open, close);
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close);
 
 //Assigning destructred values to variables
 // const {
 //   fri: { open: o, close: c },
 // } = openingHours;
 // console.log(o, c);
-/*
+
 // const arr = [2, 3, 4];
 // //Normal way of retriveing arrays
 // const a = arr[0];
