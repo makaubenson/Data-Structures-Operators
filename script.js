@@ -63,6 +63,12 @@ console.log(...newArr); // 1,2,7,8,9
 
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
+
+//Copying Arrays
+const mainMenuCopy = [...restaurant.mainMenu];
+console.log(mainMenuCopy);
+
+
 //Destructing Objects
 // const { name, openingHours, categories } = restaurant;
 // console.log(name, openingHours, categories);

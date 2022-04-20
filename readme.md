@@ -16,3 +16,5 @@
 - To use spread operator, it would be `const newArr = [1, 2, ...arr];`
 - `console.log(newArr);`
 - The spread operator takes all values out of array and write them individually.
+- Does not create new variables
+- Used where values are needed in comma separated list.
