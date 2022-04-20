@@ -25,6 +25,11 @@ const restaurant = {
       `Order Received!. ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your delicious pasta with ${ing1},${ing2} and ${ing3}`
+    );
+  },
   openingHours: {
     thu: {
       open: 12,
@@ -76,6 +81,13 @@ console.log(menu);
 const str = 'Benson';
 const letters = [...str, ' ', 'S.'];
 console.log(letters);
+const ingredients = [
+  prompt("Let's make pasta! Ingredient 1?"),
+  prompt("Let's make pasta! Ingredient 2?"),
+  prompt("Let's make pasta! Ingredient 3?"),
+];
+console.log(ingredients);
+restaurant.orderPasta(...ingredients);
 //Destructing Objects
 // const { name, openingHours, categories } = restaurant;
 // console.log(name, openingHours, categories);
