@@ -34,3 +34,13 @@
 - Takes remaining elements of an array and puts them in a new array.
 - It takes all the values after the last element. It does not include the skipped elements.
 - The Rest element must be the last element on the destructuring syntax.
+
+# Short Circuiting
+
+### Logical Operators
+
+- Use any datatypes
+- They can return any data type
+- The do short circuiting (short circuit evaluation)
+
+- `For the case of OR Operator`- Short Circuting means that if the first value is a truthy value, it will return that first value. e.g `console.log(3 || 'Benson');`

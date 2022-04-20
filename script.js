@@ -59,6 +59,24 @@ restaurant.orderDelivery({
   starterIndex: 1,
 });
 
+// Short Circuiting
+
+console.log(3 || 'Benson'); //3
+console.log('' || 'Benson'); //Benson since '' is a falsy value
+console.log(true || 0); // True: since 0 is falsy
+console.log(undefined || null); //output: null, both undefined and null are falsy.
+console.log(undefined || 0 || '' || 'Hello' || 23 || null); // output 'Hello' since its the first truthy value
+
+// restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+//Use Short Circuiting
+
+/*
 // Rest Patterns and Parameters
 //Arrays
 const [a, b, ...others] = [1, 2, 3, 4, 5];
@@ -92,7 +110,7 @@ const x = [23, 5, 7];
 add(...x);
 
 restaurant.orderPizza('Mushrooms', 'Onions', 'Tomatoes', 'Fruits');
-/*
+
 // The Spread Operator
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
