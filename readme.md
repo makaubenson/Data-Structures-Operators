@@ -57,3 +57,7 @@
 #### Nullish Assignment Operator (??)
 
 - Assigns value to a variable if the value is currently `undefined` or `null`.
+
+#### And Operator (&&)
+
+- Short circuits when the first value is falsy and displays the second value.
