@@ -44,3 +44,6 @@
 - The do short circuiting (short circuit evaluation)
 
 - `For the case of OR Operator`- Short Circuting means that if the first value is a truthy value, it will return that first value. e.g `console.log(3 || 'Benson');`
+
+- `And Operator &&` - It short circuits when the first value is falsy and immediately returns that short value without evaluating the second operand.
+- And operator returns the second operand

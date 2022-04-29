@@ -59,8 +59,8 @@ restaurant.orderDelivery({
   starterIndex: 1,
 });
 
-// Short Circuiting
-
+// Short Circuiting || (or) operator
+console.log('------OR------');
 console.log(3 || 'Benson'); //3
 console.log('' || 'Benson'); //Benson since '' is a falsy value
 console.log(true || 0); // True: since 0 is falsy
@@ -74,7 +74,25 @@ console.log(guests1);
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
 
-//Use Short Circuiting
+console.log('-----AND------');
+console.log(0 && 'Benson');
+console.log(7 && 'Benson');
+
+console.log('Hello' && 23 && null && 'Benson'); //Null
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('Mushrooms', 'Spinash');
+
+//The Nullish Coalescing Operator
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+//Nullish: null and undefined
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
 
 /*
 // Rest Patterns and Parameters
