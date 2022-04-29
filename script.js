@@ -60,7 +60,8 @@ const restaurant = {
 // });
 const rest1 = {
   name: 'Capri',
-  numGuests: 20,
+  // numGuests: 20,
+  numGuests: 0,
 };
 const rest2 = {
   name: 'La Plazza',
@@ -70,10 +71,17 @@ const rest2 = {
 //Or Assignment Operator
 // rest1.numGuests = rest1.numGuests || 10;
 //Or
-rest1.numGuests ||= 10;
+// rest1.numGuests ||= 10;
 // rest2.numGuests = rest2.numGuests || 10;
 //or
-rest2.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+// console.log(rest1);
+// console.log(rest2);
+
+//Nullish assignment operator
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
 console.log(rest1);
 console.log(rest2);
 /*
