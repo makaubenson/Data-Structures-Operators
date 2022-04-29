@@ -48,17 +48,30 @@ const restaurant = {
     },
   },
 };
-restaurant.orderDelivery({
-  time: '22:30',
-  address: 'Via del Sole, 21',
-  mainIndex: 2,
-  starterIndex: 2,
-});
-restaurant.orderDelivery({
-  address: 'Via del Sole, 25',
-  starterIndex: 1,
-});
-
+// restaurant.orderDelivery({
+//   time: '22:30',
+//   address: 'Via del Sole, 21',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
+// restaurant.orderDelivery({
+//   address: 'Via del Sole, 25',
+//   starterIndex: 1,
+// });
+const rest1 = {
+  name: 'Capri',
+  numGuests: 20,
+};
+const rest2 = {
+  name: 'La Plazza',
+  owner: 'Giovanni Rossi',
+};
+//Logical Assignment Operators
+rest1.numGuests = rest1.numGuests || 10;
+rest2.numGuests = rest2.numGuests || 10;
+console.log(rest1);
+console.log(rest2);
+/*
 // Short Circuiting || (or) operator
 console.log('------OR------');
 console.log(3 || 'Benson'); //3
@@ -94,7 +107,8 @@ console.log(guests);
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
 
-/*
+
+
 // Rest Patterns and Parameters
 //Arrays
 const [a, b, ...others] = [1, 2, 3, 4, 5];
