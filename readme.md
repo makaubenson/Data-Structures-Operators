@@ -47,3 +47,6 @@
 
 - `And Operator &&` - It short circuits when the first value is falsy and immediately returns that short value without evaluating the second operand.
 - And operator returns the second operand
+## Logical Assignment Operators
+#### Or Assignment Operator
+- `rest1.numGuests ||= 10;` is similar to writing `rest2.numGuests = rest2.numGuests || 10;`
