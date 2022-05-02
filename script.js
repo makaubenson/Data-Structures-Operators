@@ -3,17 +3,21 @@
 // Data needed for a later exercise
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
-
+const weekdays = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun'];
 const openingHours = {
-  thu: {
+  [weekdays[3]]: {
     open: 12,
     close: 22,
   },
-  fri: {
+  [weekdays[4]]: {
     open: 11,
     close: 23,
   },
-  sat: {
+  // [`day-${2 + 4}`]: {
+  //   open: 0, // Open 24 hours
+  //   close: 24,
+  // },
+  [weekdays[5]]: {
     open: 0, // Open 24 hours
     close: 24,
   },
