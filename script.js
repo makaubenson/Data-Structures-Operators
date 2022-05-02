@@ -87,8 +87,8 @@ rest2.numGuests ??= 10;
 // rest2.owner = rest2.owner && '<ANONYMOUS>';
 rest1.owner &&= '<ANONYMOUS>';
 rest2.owner &&= '<ANONYMOUS>';
-console.log(rest1);
-console.log(rest2);
+// console.log(rest1);
+// console.log(rest2);
 /*
 // Short Circuiting || (or) operator
 console.log('------OR------');
@@ -293,3 +293,80 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 */
+//Quiz: Challenge
+
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+//solution
+// 1: Create one player array for each team(variables: 'players1, and players2)
+const [players1, players2] = game.players;
+console.log(`Players 1`, players1, `Players 2`, players2);
+
+let [gk, ...fieldPlayers] = players1; // Using Rest Operator
+console.log(`Players1 Field Players Team:`, fieldPlayers);
+
+const allPlayers = [...players1, ...players2]; //spread operator
+console.log(`All Players:`, allPlayers);
+
+const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
+console.log(`All Team one players`, players1Final);
+
+// const team1 = game.odds.team1;
+// const draw = game.odds.x;
+// const team2 = game.odds.team2;
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+console.log(
+  `The odds of team1 is ${team1}, team2 is ${team2} and Draw is ${draw}`
+);
+
+const printGoals = function (...players) {
+  console.log(`${players.length} goals were scored`);
+};
+
+printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+printGoals('Davies', 'Muller');
+printGoals(game.scored);
+printGoals(...game.scored);
+
+team1 < team2 && console.log('Team 1 is more likely to win');
+team1 > team2 && console.log('Team 2  is more likely to win');
