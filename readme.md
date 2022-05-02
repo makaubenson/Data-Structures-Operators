@@ -70,3 +70,9 @@
 - Automatically loops through an array and gives a value at every iteration
 - We can use `continue` and `break` keywords.
 - `menu.entries()` is an array Iterator which inside itself containes other arrays with an index and value
+
+### Optional Chaining
+
+- `console.log(restaurant.openingHours.mon?.open);`
+- Only when the value before the `?` exists that the value after it will be read.
+- For the scenario above, only when `restaurant.openingHours.mon` exists that `open` will be read, else it will return undefined.

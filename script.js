@@ -52,6 +52,20 @@ const restaurant = {
   openingHours,
 };
 
+//Without Optional Chaining
+if (restaurant.openingHours && restaurant.openingHours.mon) {
+  console.log(restaurant.openingHours.mon.open);
+}
+//With Optional Chaining
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mon?.open);
+//Example
+const days = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun'];
+for (const day of days) {
+  console.log(day);
+  const open = restaurant.openingHours[day]?.open;
+  console.log();
+}
 /*
 //Another way to loop through Arrays
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
