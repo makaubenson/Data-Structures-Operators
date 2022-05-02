@@ -58,7 +58,10 @@ console.log(menu);
 
 //for of loop
 for (const item of menu) console.log(item);
-
+// getting indexes of arrays items using for of loop
+for (const item of menu.entries()) {
+  console.log(item);
+}
 /*
 // restaurant.orderDelivery({
 //   time: '22:30',
