@@ -57,8 +57,12 @@ console.log(menu);
 // }
 
 //for of loop
+
 for (const item of menu) console.log(item);
+
 // getting indexes of arrays items using for of loop
+console.log(menu.entries()); //Array Iterator {}
+console.log(...menu.entries());
 console.log(`..................METHOD 1................`);
 for (const item of menu.entries()) {
   console.log(`${item[0] + 1} : ${item[1]}`);
@@ -67,8 +71,6 @@ console.log(`..................METHOD 2................`);
 for (const [i, el] of menu.entries()) {
   console.log(`${i + 1} : ${el}`);
 }
-console.log(menu.entries()); //Array Iterator {}
-console.log(...menu.entries());
 
 /*
 // restaurant.orderDelivery({
