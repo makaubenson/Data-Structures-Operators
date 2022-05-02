@@ -61,3 +61,11 @@
 #### And Operator (&&)
 
 - Short circuits when the first value is falsy and displays the second value.
+
+## Looping through Arrays
+
+#### for of loop
+
+- `for (const item of menu) console.log(item);`
+- Automatically loops through an array and gives a value at every iteration
+- We can use `continue` and `break` keywords.

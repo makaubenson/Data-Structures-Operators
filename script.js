@@ -48,6 +48,18 @@ const restaurant = {
     },
   },
 };
+//Another way to loop through Arrays
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+//a) looping using for loop
+// for (let i = 0; i <= menu.length - 1; i++) {
+//   console.log(menu[i]);
+// }
+
+//for of loop
+for (const item of menu) console.log(item);
+
+/*
 // restaurant.orderDelivery({
 //   time: '22:30',
 //   address: 'Via del Sole, 21',
@@ -89,7 +101,7 @@ rest1.owner &&= '<ANONYMOUS>';
 rest2.owner &&= '<ANONYMOUS>';
 // console.log(rest1);
 // console.log(rest2);
-/*
+
 // Short Circuiting || (or) operator
 console.log('------OR------');
 console.log(3 || 'Benson'); //3
@@ -292,7 +304,7 @@ console.log(i, j, k);
 //Default Values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
-*/
+
 //Quiz: Challenge
 
 const game = {
@@ -370,3 +382,4 @@ printGoals(...game.scored);
 
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2  is more likely to win');
+*/
