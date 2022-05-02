@@ -69,3 +69,4 @@
 - `for (const item of menu) console.log(item);`
 - Automatically loops through an array and gives a value at every iteration
 - We can use `continue` and `break` keywords.
+- `menu.entries()` is an array Iterator which inside itself containes other arrays with an index and value
