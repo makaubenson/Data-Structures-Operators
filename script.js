@@ -67,6 +67,12 @@ for (const day of days) {
   const open = restaurant.openingHours[day]?.open ?? 'Closed';
   console.log(`On ${day}, we open at ${open}`);
 }
+
+//Methods
+
+//checking if method named order exists
+console.log(restaurant.order?.(0, 1) ?? 'Method Does Not exist');
+console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method Does Not exist'); //returns `Method Does Not exist`
 /*
 //Another way to loop through Arrays
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];

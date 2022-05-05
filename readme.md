@@ -76,3 +76,9 @@
 - `console.log(restaurant.openingHours.mon?.open);`
 - Only when the value before the `?` exists that the value after it will be read.
 - For the scenario above, only when `restaurant.openingHours.mon` exists that `open` will be read, else it will return undefined.
+
+#### Methods
+
+- We can check if a method exists before calling it.
+- checking if method named order exists
+- `console.log(restaurant.order?.(0, 1) ?? 'Method Does Not exist');`
