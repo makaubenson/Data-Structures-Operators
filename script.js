@@ -73,6 +73,11 @@ const entries = Object.entries(openingHours);
 for (const x of entries) {
   console.log(x);
 }
+
+//destructure an object to access its values [key,value]
+for (const [day, { open, close }] of entries) {
+  console.log(`on ${day}, we open at ${open} and close at ${close}`);
+}
 /*
 //Without Optional Chaining
 if (restaurant.openingHours && restaurant.openingHours.mon) {
