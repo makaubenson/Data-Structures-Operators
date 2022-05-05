@@ -67,7 +67,12 @@ console.log(values);
 // for (const value of values) {
 //   console.log(value);
 // }
-
+// Entire Object
+const entries = Object.entries(openingHours);
+// console.log(entries);
+for (const x of entries) {
+  console.log(x);
+}
 /*
 //Without Optional Chaining
 if (restaurant.openingHours && restaurant.openingHours.mon) {
