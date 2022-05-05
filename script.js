@@ -61,6 +61,12 @@ for (const day of Object.keys(openingHours)) {
   openStr = openStr + `${day}, `;
 }
 console.log(openStr);
+//Property Values
+let values = Object.values(openingHours);
+console.log(values);
+// for (const value of values) {
+//   console.log(value);
+// }
 
 /*
 //Without Optional Chaining
