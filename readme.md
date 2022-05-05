@@ -88,4 +88,4 @@
 - we can use optional chaining to check if an array is empty.
 - `const users = [{ name: 'Benson', email: bensonmakau2000@gmail.com' }];`
 - `console.log(users[0]?.name ?? 'User Array Empty');`
-- Log the value at index 0 of users array only if it exists else log 'User Array Empty'.
+- Log the `users[0]` of users array only if it exists else log 'User Array Empty'.
