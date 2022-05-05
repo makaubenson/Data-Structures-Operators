@@ -71,7 +71,7 @@
 - We can use `continue` and `break` keywords.
 - `menu.entries()` is an array Iterator which inside itself containes other arrays with an index and value
 
-### Optional Chaining
+### Optional Chaining (?)
 
 - `console.log(restaurant.openingHours.mon?.open);`
 - Only when the value before the `?` exists that the value after it will be read.

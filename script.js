@@ -51,7 +51,9 @@ const restaurant = {
   //ES6 Enhanced Object Literals
   openingHours,
 };
+//Looping Objects
 
+/*
 //Without Optional Chaining
 if (restaurant.openingHours && restaurant.openingHours.mon) {
   console.log(restaurant.openingHours.mon.open);
@@ -76,7 +78,7 @@ console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method Does Not exist'); //retur
 // Arrays
 const users = [{ name: 'Benson', email: 'bensonmakau2000@gmail.com' }];
 console.log(users[0]?.name ?? 'User Array Empty');
-/*
+
 //Another way to loop through Arrays
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
