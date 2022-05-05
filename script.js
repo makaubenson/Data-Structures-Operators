@@ -53,6 +53,15 @@ const restaurant = {
 };
 //Looping Objects
 
+//Property Names
+const properties = Object.keys(openingHours);
+console.log(properties); // array with the property names
+let openStr = `We are open on ${properties.length} days: `; // array with the property names
+for (const day of Object.keys(openingHours)) {
+  openStr = openStr + `${day}, `;
+}
+console.log(openStr);
+
 /*
 //Without Optional Chaining
 if (restaurant.openingHours && restaurant.openingHours.mon) {
