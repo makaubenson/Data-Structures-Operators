@@ -63,8 +63,9 @@ console.log(restaurant.openingHours?.mon?.open);
 const days = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun'];
 for (const day of days) {
   console.log(day);
-  const open = restaurant.openingHours[day]?.open;
-  console.log();
+  // const open = restaurant.openingHours[day]?.open || 'Closed';
+  const open = restaurant.openingHours[day]?.open ?? 'Closed';
+  console.log(`On ${day}, we open at ${open}`);
 }
 /*
 //Another way to loop through Arrays
