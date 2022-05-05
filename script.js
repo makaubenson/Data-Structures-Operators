@@ -73,6 +73,9 @@ for (const day of days) {
 //checking if method named order exists
 console.log(restaurant.order?.(0, 1) ?? 'Method Does Not exist');
 console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method Does Not exist'); //returns `Method Does Not exist`
+// Arrays
+const users = [{ name: 'Benson', email: 'bensonmakau2000@gmail.com' }];
+console.log(users[0]?.name ?? 'User Array Empty');
 /*
 //Another way to loop through Arrays
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];

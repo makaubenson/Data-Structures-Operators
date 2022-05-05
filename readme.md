@@ -77,8 +77,15 @@
 - Only when the value before the `?` exists that the value after it will be read.
 - For the scenario above, only when `restaurant.openingHours.mon` exists that `open` will be read, else it will return undefined.
 
-#### Methods
+#### Optional Chaining -Methods
 
 - We can check if a method exists before calling it.
 - checking if method named order exists
 - `console.log(restaurant.order?.(0, 1) ?? 'Method Does Not exist');`
+
+#### Optional Chaining -Arrays
+
+- we can use optional chaining to check if an array is empty.
+- `const users = [{ name: 'Benson', email: bensonmakau2000@gmail.com' }];`
+- `console.log(users[0]?.name ?? 'User Array Empty');`
+- Log the value at index 0 of users array only if it exists else log 'User Array Empty'.
