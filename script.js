@@ -591,5 +591,8 @@ ordersSet.delete('Rissoto');
 console.log(ordersSet);
 
 // Deleting all elements of a set
-ordersSet.clear();
-console.log(ordersSet);
+// ordersSet.clear();
+// console.log(ordersSet);
+
+// Looping Over Sets
+for (const order of ordersSet) console.log(order);
