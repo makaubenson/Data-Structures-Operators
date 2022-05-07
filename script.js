@@ -613,4 +613,7 @@ console.log(new Set(newStaffArray).size);
 //count how many different letters are in a string
 console.log(new Set('jonasschmedtmann').size);
 */
+
 // Maps
+// Creating a Map
+const rest = new Map();

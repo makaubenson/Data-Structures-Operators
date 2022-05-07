@@ -114,3 +114,5 @@
 - A map is a data structure that we can use to map values to keys.
 - Data is stored in key value pairs in maps
 - Keys in maps can be `any type` different from objects where keys are only `strings`.
+- Creating a Map
+- `const rest = new Map();`
