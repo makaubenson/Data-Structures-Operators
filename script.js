@@ -589,3 +589,7 @@ console.log(ordersSet);
 //Delete elements from a set
 ordersSet.delete('Rissoto');
 console.log(ordersSet);
+
+// Deleting all elements of a set
+ordersSet.clear();
+console.log(ordersSet);
