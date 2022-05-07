@@ -660,3 +660,6 @@ rest.set(arr, 'Test');
 console.log(rest);
 //accessing value held by the array keys
 console.log(rest.get(arr));
+
+rest.set(document.querySelector('h1'), 'Heading');
+console.log(rest);
