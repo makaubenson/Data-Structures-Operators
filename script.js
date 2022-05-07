@@ -649,3 +649,7 @@ console.log(rest.has('Categories'));
 rest.delete(2);
 // Checking size of a map
 console.log(rest.size);
+
+//remove all elements from the map
+rest.clear();
+console.log(rest);
