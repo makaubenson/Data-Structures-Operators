@@ -577,3 +577,7 @@ console.log(new Set()); // Set can also be empty
 
 // Checking set size
 console.log(ordersSet.size);
+
+//Check if a certain element is in a set
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
