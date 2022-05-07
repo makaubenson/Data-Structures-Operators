@@ -617,3 +617,7 @@ console.log(new Set('jonasschmedtmann').size);
 // Maps
 // Creating a Map
 const rest = new Map();
+rest.set('name', 'Classico Italiano');
+rest.set(1, 'Firance, Italy');
+rest.set(2, 'Lisbon, Portual');
+console.log(rest); //Map(3) {'name' => 'Classico Italiano', 1 => 'Firance, Italy', 2 => 'Lisbon, Portual'}

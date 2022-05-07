@@ -115,4 +115,6 @@
 - Data is stored in key value pairs in maps
 - Keys in maps can be `any type` different from objects where keys are only `strings`.
 - Creating a Map
+- The easiest way to create a map it to create an empty map and populate it using `set()` method with 2 params
 - `const rest = new Map();`
+- `rest.set('name', 'Classico Italiano');`
