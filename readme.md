@@ -100,4 +100,4 @@
 - A set can hold values with different datatypes
 - Does not display duplicates despite having them existent in the set.
 
-- Note: <quote> Strings are iterables</quote>
+- Note: `Strings are iterables`
