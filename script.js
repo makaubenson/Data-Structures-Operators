@@ -451,7 +451,7 @@ printGoals(...game.scored);
 
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2  is more likely to win');
-*/
+
 //Coding Challenge
 
 const game = {
@@ -538,15 +538,23 @@ for (const odd of odds) {
   console.log(`New  AVG: ${average}`);
 }
 
-const team1 = game.team1;
-const team2 = game.team2;
-console.log(`Team 1 is: ${team1} and team 2 is : ${team2}`);
+//3
+// const team1 = game.team1;
+// const team2 = game.team2;
+// console.log(`Team 1 is: ${team1} and team 2 is : ${team2}`);
 
-// console.log(players);
-let [goal, player] = players;
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
+  console.log(`Odd of ${teamStr}  ${odd}`);
+}
 
-// console.log(`${player} : ${goal}`);
-const scorers = {
-  player: goal,
-};
 // console.log(scorers);
+// BONUS
+// So the solution is to loop over the array, and add the array elements as object properties,
+// and then increase the count as we encounter a new occurence of a certain element
+const scorers = {};
+for (const player of game.scored) {
+  scorers[player] ? scorers[player]++ : (scorers[player] = 1);
+}
+console.log(scorers);
+*/
