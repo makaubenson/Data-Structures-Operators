@@ -572,3 +572,5 @@ console.log(ordersSet); //Set(3) {'Pasta', 'Pizza', 'Rissoto'}
 
 //Strings are also iterables
 console.log(new Set('Benson')); //Set(5) {'B', 'e', 'n', 's', 'o'}
+
+console.log(new Set()); // Set can also be empty
