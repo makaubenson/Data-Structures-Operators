@@ -124,3 +124,4 @@
 - To read data from a map we use `get()` method.
 - Its available on all maps.
 - All we need is to parse the name of the key.
+- The key's data type should be retained while being parsed.

@@ -635,3 +635,9 @@ rest
 // What is required is to just parse a key to the method
 console.log(rest.get('name')); //Classico Italiano
 console.log(rest.get(true)); //We are open :D
+
+const time = 21;
+console.log(
+  `At ${time} hours,`,
+  rest.get(time > rest.get('open') && time < rest.get('close'))
+);
