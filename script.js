@@ -641,3 +641,6 @@ console.log(
   `At ${time} hours,`,
   rest.get(time > rest.get('open') && time < rest.get('close'))
 );
+
+// Check if a map contains a certain key
+console.log(rest.has('Categories'));
