@@ -583,5 +583,9 @@ console.log(ordersSet.has('Pizza')); //True
 console.log(ordersSet.has('Bread')); // False
 
 //adding new elements to a set
-ordersSet.add('Bread');
+ordersSet.add('Garlic Bread');
+console.log(ordersSet);
+
+//Delete elements from a set
+ordersSet.delete('Rissoto');
 console.log(ordersSet);

@@ -101,3 +101,4 @@
 - Does not display duplicates despite having them existent in the set.
 
 - Note: `Strings are iterables`
+- Set has to be unique, thus if 2 values exist with the same name, it ignores one of them and displays one
