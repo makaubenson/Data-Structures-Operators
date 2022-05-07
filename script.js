@@ -557,7 +557,7 @@ for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
 console.log(scorers);
-*/
+
 
 //Sets
 const ordersSet = new Set([
@@ -612,3 +612,5 @@ console.log(new Set(newStaffArray).size);
 
 //count how many different letters are in a string
 console.log(new Set('jonasschmedtmann').size);
+*/
+// Maps
