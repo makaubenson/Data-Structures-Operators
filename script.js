@@ -657,3 +657,5 @@ console.log(rest.size);
 // using arrays and objects as map keys
 rest.set([1, 2], 'Test');
 console.log(rest);
+//accessing value held by the array keys
+console.log(rest.get([1, 2]));
