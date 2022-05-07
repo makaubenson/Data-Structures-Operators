@@ -118,3 +118,9 @@
 - The easiest way to create a map it to create an empty map and populate it using `set()` method with 2 params
 - `const rest = new Map();`
 - `rest.set('name', 'Classico Italiano');`
+
+### Reading data from Maps
+
+- To read data from a map we use `get()` method.
+- Its available on all maps.
+- All we need is to parse the name of the key.

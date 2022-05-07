@@ -630,3 +630,8 @@ rest
   .set(true, 'We are open :D')
   .set(false, 'We are closed :( ');
 // console.log(rest);
+
+// Reading Data from a Map we use get() method
+// What is required is to just parse a key to the method
+console.log(rest.get('name')); //Classico Italiano
+console.log(rest.get(true)); //We are open :D
