@@ -647,3 +647,5 @@ console.log(rest.has('Categories'));
 
 //Delete elements from the map
 rest.delete(2);
+// Checking size of a map
+console.log(rest.size);
