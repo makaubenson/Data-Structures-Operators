@@ -574,3 +574,6 @@ console.log(ordersSet); //Set(3) {'Pasta', 'Pizza', 'Rissoto'}
 console.log(new Set('Benson')); //Set(5) {'B', 'e', 'n', 's', 'o'}
 
 console.log(new Set()); // Set can also be empty
+
+// Checking set size
+console.log(ordersSet.size);
