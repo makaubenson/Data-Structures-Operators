@@ -596,3 +596,13 @@ console.log(ordersSet);
 
 // Looping Over Sets
 for (const order of ordersSet) console.log(order);
+
+// Set Use Case
+// The MAIN use case for sets is to remove duplicates values of arrays.
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+// get all staff roles without duplicates
+const staffUnique = new Set(staff);
+console.log(staffUnique);
+// converting set to array
+const newStaffArray = [...new Set(staff)];
+console.log(newStaffArray);
