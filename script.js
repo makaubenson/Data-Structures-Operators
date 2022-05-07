@@ -579,5 +579,9 @@ console.log(new Set()); // Set can also be empty
 console.log(ordersSet.size);
 
 //Check if a certain element is in a set
-console.log(ordersSet.has('Pizza'));
-console.log(ordersSet.has('Bread'));
+console.log(ordersSet.has('Pizza')); //True
+console.log(ordersSet.has('Bread')); // False
+
+//adding new elements to a set
+ordersSet.add('Bread');
+console.log(ordersSet);
