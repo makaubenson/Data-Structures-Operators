@@ -558,3 +558,14 @@ for (const player of game.scored) {
 }
 console.log(scorers);
 */
+
+//Sets
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Rissoto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(ordersSet); //Set(3) {'Pasta', 'Pizza', 'Rissoto'}

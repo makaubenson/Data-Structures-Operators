@@ -48,7 +48,7 @@
 - `And Operator &&` - It short circuits when the first value is falsy and immediately returns that short value without evaluating the second operand.
 - And operator returns the second operand
 
-## Logical Assignment Operators
+### Logical Assignment Operators
 
 #### Or Assignment Operator(||)
 
@@ -64,7 +64,7 @@
 
 ## Looping through Arrays
 
-#### for of loop
+### for of loop
 
 - `for (const item of menu) console.log(item);`
 - Automatically loops through an array and gives a value at every iteration
@@ -89,3 +89,15 @@
 - `const users = [{ name: 'Benson', email: bensonmakau2000@gmail.com' }];`
 - `console.log(users[0]?.name ?? 'User Array Empty');`
 - Log the `users[0]` of users array only if it exists else log 'User Array Empty'.
+
+## Sets
+
+- The Set object lets you store unique values of any type, whether primitive values or object
+- Set objects are collections of values. You can iterate through the elements of a set in insertion order.
+- A value in the Set may only occur once; it is unique in the Set's collection.7
+- To create a set : `const orderSet = new Set(parse and iterable here: e.g array);`
+- `const orderSet = new Set(['Pasta', 'Pizza','Pizza','Rissoto','Pasta','Pizza']);`
+- A set can hold values with different datatypes
+- Does not display duplicates despite having them existent in the set.
+
+- Note: <quote> Strings are iterables</quote>
