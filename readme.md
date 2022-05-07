@@ -106,3 +106,4 @@
 - Looping Over Sets
 - `for (const order of ordersSet) console.log(order);`
 - The MAIN use case for sets is to remove duplicates values of arrays.
+- `note`: Sets are not intended to replace arrays
