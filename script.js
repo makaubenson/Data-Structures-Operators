@@ -621,3 +621,12 @@ rest.set('name', 'Classico Italiano');
 rest.set(1, 'Firance, Italy');
 rest.set(2, 'Lisbon, Portual');
 console.log(rest); //Map(3) {'name' => 'Classico Italiano', 1 => 'Firance, Italy', 2 => 'Lisbon, Portual'}
+
+//Chaining set method
+rest
+  .set('Categories', ['Italian', 'Pizzeria', 'Vegeterian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23)
+  .set(true, 'We are open :D')
+  .set(false, 'We are closed :( ');
+// console.log(rest);
