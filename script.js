@@ -644,3 +644,6 @@ console.log(
 
 // Check if a map contains a certain key
 console.log(rest.has('Categories'));
+
+//Delete elements from the map
+rest.delete(2);
