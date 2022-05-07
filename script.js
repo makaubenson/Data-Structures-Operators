@@ -603,6 +603,12 @@ const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 // get all staff roles without duplicates
 const staffUnique = new Set(staff);
 console.log(staffUnique);
-// converting set to array
+
+// converting set to array using spread operator(...)
 const newStaffArray = [...new Set(staff)];
 console.log(newStaffArray);
+//finding set size
+console.log(new Set(newStaffArray).size);
+
+//count how many different letters are in a string
+console.log(new Set('jonasschmedtmann').size);
