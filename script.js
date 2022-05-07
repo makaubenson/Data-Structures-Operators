@@ -651,5 +651,9 @@ rest.delete(2);
 console.log(rest.size);
 
 //remove all elements from the map
-rest.clear();
+// rest.clear();
+// console.log(rest);
+
+// using arrays and objects as map keys
+rest.set([1, 2], 'Test');
 console.log(rest);
