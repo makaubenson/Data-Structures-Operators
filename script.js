@@ -494,11 +494,59 @@ const game = {
     team2: 6.5,
   },
 };
-// Loop Over game.scored and print each player to the console together with the number of goals scored
-const scorers = Object.entries(game.scored);
-console.log(scorers);
-for (let [goal, player] of scorers) {
-  goal = parseInt(goal);
+//step 1: Loop Over game.scored and print each player to the console together with the number of goals scored
+const players = Object.entries(game.scored);
+console.log(players);
+for (let [goal, player] of players) {
+  goal = parseInt(goal); //convert string to int
   goal = goal + 1;
   console.log(`Goal ${goal}  : ${player}`);
 }
+//step 2: use the loop to calculate the average odd and log it to the console
+//method 1
+// const odds = Object.values(game.odds);
+// console.log(`The odds are: ${odds}`);
+// let sum = 0;
+// for (const value of odds) {
+//   sum = sum + value;
+// }
+// // console.log(sum);
+// const oddsAverage = sum / odds.length;
+// console.log(`The odds average is: ${oddsAverage}`);
+// console.log(`The odd of Bayern Munich is: ${odds[0]}`);
+// console.log(`The odd for Draw is: ${odds[1]}`);
+// console.log(`The odd of Real Madrid is: ${odds[2]}`);
+
+//method 2
+//option 1
+// let average = 0;
+// const odds = Object.values(game.odds);
+// console.log(`odds: ${odds}`);
+// for (const odd of odds) average += odd;
+// console.log(`old average: ${average}`);
+// average /= odds.length;
+// console.log(`New  AVG: ${average}`); //3.6933333333333334
+
+//option 2 : for with curly braces
+let average = 0;
+const odds = Object.values(game.odds);
+console.log(`odds: ${odds}`);
+for (const odd of odds) {
+  average += odd;
+  console.log(`old average: ${average}`);
+  average /= odds.length;
+  console.log(`New  AVG: ${average}`);
+}
+
+const team1 = game.team1;
+const team2 = game.team2;
+console.log(`Team 1 is: ${team1} and team 2 is : ${team2}`);
+
+// console.log(players);
+let [goal, player] = players;
+
+// console.log(`${player} : ${goal}`);
+const scorers = {
+  player: goal,
+};
+// console.log(scorers);
