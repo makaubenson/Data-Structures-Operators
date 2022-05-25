@@ -767,3 +767,6 @@ console.log('B752'[0]); //B
 //Finding string length
 console.log('B752'.length); //4
 console.log(airline.length); //16
+//String Methods
+console.log(airline.indexOf('r')); // 6
+console.log(airline.indexOf('t')); // 11

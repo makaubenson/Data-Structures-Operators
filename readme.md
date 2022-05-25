@@ -224,3 +224,9 @@
 - console.log(plane[3]); //0
 - console.log(plane[4]); //undefined
 - console.log('B752'[0]); //B
+
+### String Methods
+
+- console.log(airline.indexOf('r')); // 6
+- console.log(airline.indexOf('t')); // 11
+- Strings are zero based, its index counting starts from 0
