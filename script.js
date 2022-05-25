@@ -768,7 +768,10 @@ console.log('B752'[0]); //B
 console.log('B752'.length); //4
 console.log(airline.length); //16
 //String Methods
+//indexOf()
 console.log(airline.indexOf('r')); // 6
 console.log(airline.indexOf('t')); // 11
 console.log(airline.indexOf('Portugal')); //8
+//lastIndexOf()
 console.log(airline.lastIndexOf('P')); // 8 Prints last occurence of 'P'
+//slice()
