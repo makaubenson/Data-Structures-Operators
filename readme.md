@@ -212,5 +212,4 @@
 - To map keys to values
 - You need keys that are not strings
 
--
 - Other data structures include `WeakMap and WeakSet`
