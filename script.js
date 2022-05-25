@@ -687,7 +687,14 @@ console.log(question.get('question'));
 for (const [key, value] of question) {
   if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
 }
-const Answer = Number(prompt('Your answer ?'));
+// const Answer = Number(prompt('Your answer ?'));
+const Answer = 3;
 console.log(Answer);
 // console.log(question.get('correct') === Answer); //true
 console.log(question.get(question.get('correct') === Answer));
+
+//converting map to array using spread operator
+console.log(...question);
+// console.log(question.entries());
+console.log([...question.keys()]);
+console.log([...question.values()]);

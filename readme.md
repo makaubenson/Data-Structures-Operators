@@ -140,3 +140,15 @@
 
 - const hoursMap = new Map(Object.entries(openingHours));
 - console.log(hoursMap);
+
+#### Maps Iteration
+
+- `const question = new Map([ ['question', 'Whats the best programming language in the world?'], [1, 'C'], [2, 'Java'], [3, 'JavaScript'], ['correct', 3], [true, 'Correct🎉'], [false, 'Wrong!, Try Again😢'], ]);`
+
+### Iterating Through The Map
+
+- `for (const [key, value] of question) { if (typeof key === 'number') console.log(`Answer ${key}: ${value}`); }`
+
+### converting map to array using spread operator
+
+- `console.log(...question);`
