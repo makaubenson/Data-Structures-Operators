@@ -130,4 +130,6 @@
 
 ### Maps Iteration
 
-
+- Method 2 of creating maps
+- `const question = new Map([ ['question', 'Whats the best programming language in the world?'], [1, 'C'], [2, 'Java'], [3, 'JavaScript'], [true, 'Correct🎉'], [false, 'Try Again😢'], ]);`
+- Array of arrays
