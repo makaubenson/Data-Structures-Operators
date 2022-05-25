@@ -213,3 +213,14 @@
 - You need keys that are not strings
 
 - Other data structures include `WeakMap and WeakSet`
+
+## WORKING WITH STRINGS
+
+- const airline = 'TAP Air Portugal';
+- const plane = 'A320';
+- console.log(plane[0]); //A
+- console.log(plane[1]); //3
+- console.log(plane[2]); //2
+- console.log(plane[3]); //0
+- console.log(plane[4]); //undefined
+- console.log('B752'[0]); //B
