@@ -127,3 +127,7 @@
 - The key's data type should be retained while being parsed.
 - We can delete elements using delete operator. This is however a slow process
 - It is possible to use `arrays and objects` as `map keys`.
+
+### Maps Iteration
+
+

@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 // Data needed for a later exercise
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
@@ -52,7 +52,7 @@ const restaurant = {
   openingHours,
 };
 //Looping Objects
-
+/*
 //Property Names
 const properties = Object.keys(openingHours);
 console.log(properties); // array with the property names
@@ -612,7 +612,6 @@ console.log(new Set(newStaffArray).size);
 
 //count how many different letters are in a string
 console.log(new Set('jonasschmedtmann').size);
-*/
 
 // Maps
 // Creating a Map
@@ -663,3 +662,15 @@ console.log(rest.get(arr));
 
 rest.set(document.querySelector('h1'), 'Heading');
 console.log(rest);
+*/
+
+// Maps Iteration
+const question = new Map([
+  ['question', 'Whats the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  [true, 'Correct🎉'],
+  [false, 'Try Again😢'],
+]);
+console.log(question);
