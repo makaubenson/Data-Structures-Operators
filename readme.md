@@ -149,10 +149,14 @@
 
 - `for (const [key, value] of question) { if (typeof key === 'number') console.log(`Answer ${key}: ${value}`); }`
 
-### converting map to array using spread operator
+### Converting map to array using spread operator
 
 - `console.log(...question);`
 - `console.log(...question);`
 - `console.log(question.entries());`
 - `console.log([...question.keys()]);`
 - `console.log([...question.values()]);`
+
+# Which Data Structure to Use
+
+-
