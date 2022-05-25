@@ -770,4 +770,5 @@ console.log(airline.length); //16
 //String Methods
 console.log(airline.indexOf('r')); // 6
 console.log(airline.indexOf('t')); // 11
+console.log(airline.indexOf('Portugal')); //8
 console.log(airline.lastIndexOf('P')); // 8 Prints last occurence of 'P'
