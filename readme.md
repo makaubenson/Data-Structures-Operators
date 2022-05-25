@@ -157,6 +157,31 @@
 - `console.log([...question.keys()]);`
 - `console.log([...question.values()]);`
 
-# Which Data Structure to Use
+# Which Data Structure to Use (Arrays, Objects, Sets, Map)
 
--
+### Sources of Data
+
+- From program itself: Data written directly in source code(status messages)
+- User Interface - Forms, DOM, etc
+- External sources (Web APIs)
+
+- For simple list of values, we use `Arrays or Sets`
+
+#### Arrays
+
+- `tasks = ['Code','Eat','Code'];`
+- `Output: {'Code','Eat','Code'}`
+- Arrays are used when you need ordered list of values, might have duplicates
+- Also used when you need to manipulate data since there a torn of array methods.
+
+#### Sets
+
+- `tasks = new Set(['Code','Eat','Code']);`
+- `Output: {'Code','Eat'}`
+- Sets are used when there is need to work with unique values
+- Used when high perfomance is really important
+- Used to remove duplicates from arrays.
+
+- If we need `key/value` pairs then we need `Objects or Maps`. Keys allow us to describe values
+- Data from web apis is stored in `Objects` There exist keys in json data.
+- Other data structures include `WeakMap and WeakSet`
