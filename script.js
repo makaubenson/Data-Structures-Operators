@@ -764,5 +764,6 @@ console.log(plane[2]); //2
 console.log(plane[3]); //0
 console.log(plane[4]); //undefined
 console.log('B752'[0]); //B
-
-
+//Finding string length
+console.log('B752'.length); //4
+console.log(airline.length); //16
