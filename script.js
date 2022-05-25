@@ -774,4 +774,6 @@ console.log(airline.indexOf('t')); // 11
 console.log(airline.indexOf('Portugal')); //8
 //lastIndexOf()
 console.log(airline.lastIndexOf('P')); // 8 Prints last occurence of 'P'
+
 //slice()
+console.log(airline.slice(4)); // extracts string as from the 4th index. //Air Portugal
