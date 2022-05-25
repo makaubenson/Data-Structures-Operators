@@ -133,3 +133,10 @@
 - Method 2 of creating maps
 - `const question = new Map([ ['question', 'Whats the best programming language in the world?'], [1, 'C'], [2, 'Java'], [3, 'JavaScript'], [true, 'Correct🎉'], [false, 'Try Again😢'], ]);`
 - Array of arrays
+
+### converting objects to maps
+
+- console.log(Object.entries(openingHours));
+
+- const hoursMap = new Map(Object.entries(openingHours));
+- console.log(hoursMap);

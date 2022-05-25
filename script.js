@@ -674,3 +674,9 @@ const question = new Map([
   [false, 'Try Again😢'],
 ]);
 console.log(question);
+
+//converting objects to maps
+// console.log(Object.entries(openingHours));
+
+const hoursMap = new Map(Object.entries(openingHours));
+console.log(hoursMap);
