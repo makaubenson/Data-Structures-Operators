@@ -193,6 +193,11 @@
 - More traditional `key/value` store
 - Easy to write and access values with `.` and `[]`
 
+#### Objects are Used when you need:
+
+- To include functions(methods)
+- Used when working with JSON (Can convert to map)
+
 ### maps
 
 `task =new Map([ ['task':'code'], ['date':'today'], [false: 'Start Coding!']]);`
@@ -201,11 +206,6 @@
 - Keys can have any data type
 - Easy to iterate
 - Easy to compute size
-
-#### Objects are Used when you need:
-
-- To include functions(methods)
-- Used when working with JSON (Can convert to map)
 
 #### Maps are Used when you need:
 
