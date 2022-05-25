@@ -184,4 +184,33 @@
 
 - If we need `key/value` pairs then we need `Objects or Maps`. Keys allow us to describe values
 - Data from web apis is stored in `Objects` There exist keys in json data.
+
+### Objects
+
+`task ={ task:'code', date:'today', repeat: true};`
+
+- Easier to use
+- More traditional `key/value` store
+- Easy to write and access values with `.` and `[]`
+
+### maps
+
+`task =new Map([ ['task':'code'], ['date':'today'], [false: 'Start Coding!']]);`
+
+- better Performance
+- Keys can have any data type
+- Easy to iterate
+- Easy to compute size
+
+#### Objects are Used when you need:
+
+- To include functions(methods)
+- Used when working with JSON (Can convert to map)
+
+#### Maps are Used when you need:
+
+- To map keys to values
+- You need keys that are not strings
+
+-
 - Other data structures include `WeakMap and WeakSet`
