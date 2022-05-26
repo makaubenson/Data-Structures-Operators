@@ -753,7 +753,7 @@ for (const [min, event] of gameEvents) {
 
   console.log(string);
 }
-*/
+
 //  WORKING WITH STRINGS
 
 const airline = 'TAP Air Portugal';
@@ -798,3 +798,10 @@ checkMiddleSeat('23C');
 checkMiddleSeat('3E');
 console.log(new String('Benson')); //String {'Benson'}
 console.log(typeof new String('Benson')); //object
+*/
+//Changing String Case
+const airline = 'TAP Air Portugal';
+console.log(airline.toLowerCase());
+console.log('BENSON'.toLowerCase());
+console.log(airline.toUpperCase());
+console.log('benson'.toUpperCase());
