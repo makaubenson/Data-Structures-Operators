@@ -796,3 +796,5 @@ const checkMiddleSeat = function (seat) {
 checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
+console.log(new String('Benson')); //String {'Benson'}
+console.log(typeof new String('Benson')); //object

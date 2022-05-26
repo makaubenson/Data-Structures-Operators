@@ -242,3 +242,12 @@
 - `console.log(airline.slice(4, 7)); // extracts string as from the 4th index to 6th index. // Air`
 - slice cant mutate or change the string. It just returns a new string nothing else.
 - length of the extracted string is `end - begginning value`
+
+## Note
+
+- Strings are primitive and thus no methods can be called to them. For javascript however the case is different, when a method is called on a string, js converts the string primitive to a string object from which then a method is called. This process is called `boxing`. Js usually calls the `String()` function to handle that.
+
+- `console.log(new String('Benson'))`//String {'Benson'}
+
+- `console.log(typeof new String('Benson'))`//object
+- After the process is done, the object is now converted back to string
