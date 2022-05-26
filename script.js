@@ -851,9 +851,26 @@ console.log(announcement.replaceAll('door', 'gate'));
 console.log(announcement.replace(/door/g, 'gate'));
 
 // includes(), startsWith() and endsWith() -Booleans
-const plane = 'A320neo';
+const plane = 'Airbus A320neo';
 console.log(plane.includes('A320'));
+console.log(plane.includes('Boeing'));
 console.log(plane.startsWith('A53'));
-console.log(plane.startsWith('A3'));
+console.log(plane.startsWith('Airb'));
 console.log(plane.endsWith('A3'));
 console.log(plane.endsWith('neo'));
+
+if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
+  console.log('Part of the New AirBus Family Series');
+}
+//Practice Exercise
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes('gun') || baggage.includes('knife')) {
+    console.log('You are not welcome aboard');
+  } else {
+    console.log('You are welcome aboard');
+  }
+};
+checkBaggage('I have a laptop, some Food and a pocket Knife');
+checkBaggage('Socks and Camera');
+checkBaggage('Got some snacks and a gun for protection');
