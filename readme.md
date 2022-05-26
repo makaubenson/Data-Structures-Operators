@@ -255,3 +255,9 @@
 - `toLowerCase()` and `toUpperCase()` methods for case manipulation
 - `trim()` used to string unnecessary whitespaces from a string.
 - There is also `trimStart` and `trimEnd` - for triming spaces from only the `start` and from the `end` respectively.
+
+### Replacing
+
+- `const priceGB = '288,97£';`
+- `const priceUS = priceGB.replace(',', '.').replace('£', '$');`
+- `console.log(priceUS);`
