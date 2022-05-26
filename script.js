@@ -916,3 +916,17 @@ console.log(maskCreditCard(7525658256586585));
 console.log(maskCreditCard(7525658256586585));
 console.log(maskCreditCard(6524877524587));
 console.log(maskCreditCard(3278411587991254));
+
+//Repeat()
+const message2 = 'Bad Weather... All Departures Delayed... ';
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(
+    `There are ${n} planes in line waiting to take of. ${'✈'.repeat(n)}`
+  );
+};
+planesInLine(5);
+planesInLine(15);
+planesInLine(7);
+planesInLine(12);

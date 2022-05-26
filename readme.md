@@ -281,3 +281,15 @@
 ##### split() Method
 
 - Allows us split a string into multiple parts based on a divider string.
+
+##### padStart(), padEnd()
+
+- Used to add padding to a string on starting end or ending side respectively.
+- `const message = 'Go to gate 23!';`
+- `console.log(message.padStart(25, '+'));`
+
+##### Repeat()
+
+- Used to repeat a string a number of times as indicated.
+- `const message2 = 'Bad Weather... All Departures Delayed... ';`
+- `console.log(message2.repeat(5));`
