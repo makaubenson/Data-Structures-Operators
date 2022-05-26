@@ -819,3 +819,16 @@ function caseCorrect(name) {
   console.log(newName);
 }
 caseCorrect('nffHagame');
+
+//Comparing Emails
+const email = 'hello@jonas.io';
+const loginEmail = '  Hello@Jonas.Io \n';
+
+console.log(email);
+console.log(loginEmail);
+
+const lowerCaseEmail = loginEmail.toLowerCase();
+
+//Strip Unneccessary Spaces
+const trimmedEmail = lowerCaseEmail.trim();
+console.log(trimmedEmail);
