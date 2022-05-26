@@ -798,7 +798,7 @@ checkMiddleSeat('23C');
 checkMiddleSeat('3E');
 console.log(new String('Benson')); //String {'Benson'}
 console.log(typeof new String('Benson')); //object
-*/
+
 //Changing String Case
 const airline = 'TAP Air Portugal';
 console.log(airline.toLowerCase());
@@ -874,3 +874,11 @@ const checkBaggage = function (items) {
 checkBaggage('I have a laptop, some Food and a pocket Knife');
 checkBaggage('Socks and Camera');
 checkBaggage('Got some snacks and a gun for protection');
+*/
+//split()
+
+console.log('a+very+nice+string'.split('+')); //(4) ['a', 'very', 'nice', 'string']
+//Destructuring
+const [firstName, lastName] = 'Benson Makau'.split(' ');
+console.log(firstName);
+console.log(lastName);

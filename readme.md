@@ -198,7 +198,7 @@
 - To include functions(methods)
 - Used when working with JSON (Can convert to map)
 
-### maps
+### Maps
 
 `task =new Map([ ['task':'code'], ['date':'today'], [false: 'Start Coding!']]);`
 
@@ -214,7 +214,7 @@
 
 - Other data structures include `WeakMap and WeakSet`
 
-## WORKING WITH STRINGS
+### WORKING WITH STRINGS
 
 - const airline = 'TAP Air Portugal';
 - const plane = 'A320';
@@ -225,7 +225,7 @@
 - `console.log(plane[4]);` //undefined
 - `console.log('B752'[0]);` //B
 
-### String Methods
+#### String Methods
 
 - `console.log(airline.indexOf('r'));` // 6
 - `console.log(airline.indexOf('t'));` // 11
@@ -234,7 +234,7 @@
 
 - `indexOf()` and `lastIndexOf()` are case sensitive
 
-## slice()
+##### slice()
 
 - First argument is that beggining value.
 - The last argument is the end value and not included in the string
@@ -243,7 +243,7 @@
 - slice cant mutate or change the string. It just returns a new string nothing else.
 - length of the extracted string is `end - begginning value`
 
-## Note
+#### Note
 
 - Strings are primitive and thus no methods can be called to them. For javascript however the case is different, when a method is called on a string, js converts the string primitive to a string object from which then a method is called. This process is called `boxing`. Js usually calls the `String()` function to handle that.
 
@@ -256,7 +256,7 @@
 - `trim()` used to string unnecessary whitespaces from a string.
 - There is also `trimStart` and `trimEnd` - for triming spaces from only the `start` and from the `end` respectively.
 
-### Replacing
+##### Replacing
 
 - `const priceGB = '288,97£';`
 - `const priceUS = priceGB.replace(',', '.').replace('£', '$');`
@@ -265,7 +265,7 @@
 - `console.log(announcement.replaceAll('door', 'gate'));`
 - `replaceAll()` - replaces all instances of a string defined in the function. Like the `door` instance above.
 
-### Method 2: Regular Expression
+##### Method 2: Regular Expression
 
 - `console.log(announcement.replace(/door/g, 'gate'));`
 
@@ -277,3 +277,7 @@
 - `console.log(plane.startsWith('A3'));`
 - `console.log(plane.endsWith('A3'));`
 - `console.log(plane.endsWith('neo'));`
+
+##### split() Method
+
+- Allows us split a string into multiple parts based on a divider string.
