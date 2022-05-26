@@ -882,3 +882,26 @@ console.log('a+very+nice+string'.split('+')); //(4) ['a', 'very', 'nice', 'stri
 const [firstName, lastName] = 'Benson Makau'.split(' ');
 console.log(firstName);
 console.log(lastName);
+//Join Method
+const newName = ['Mr', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
+
+//Capitalize Last name
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+
+  for (const n of names) {
+    // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(' '));
+};
+const passenger = 'jessica ann smith davis';
+capitalizeName(passenger);
+capitalizeName('benson makau katumo');
+
+//Padding
+const message = 'Go to gate 23!';
+console.log(message.padStart(25, '+'));
+console.log(message.padEnd(25, '+'));
