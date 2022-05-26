@@ -812,3 +812,10 @@ const passengerLower = passenger.toLowerCase();
 const passengerCorrect =
   passengerLower[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
+// Use function to Fix Case Problem in a name
+function caseCorrect(name) {
+  const lowerCaseName = name.toLowerCase();
+  const newName = lowerCaseName[0].toUpperCase() + lowerCaseName.slice(1);
+  console.log(newName);
+}
+caseCorrect('nffHagame');
