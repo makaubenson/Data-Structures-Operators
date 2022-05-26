@@ -281,6 +281,7 @@
 ##### split() Method
 
 - Allows us split a string into multiple parts based on a divider string.
+- `console.log('a+very+nice+string'.split('+'));` //(4) ['a', 'very', 'nice', 'string']
 
 ##### padStart(), padEnd()
 
