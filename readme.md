@@ -251,3 +251,7 @@
 
 - `console.log(typeof new String('Benson'))`//object
 - After the process is done, the object is now converted back to string
+
+- `toLowerCase()` and `toUpperCase()` methods for case manipulation
+- `trim()` used to string unnecessary whitespaces from a string.
+- There is also `trimStart` and `trimEnd` - for triming spaces from only the `start` and from the `end` respectively.

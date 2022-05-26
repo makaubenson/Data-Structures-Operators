@@ -828,7 +828,12 @@ console.log(email);
 console.log(loginEmail);
 
 const lowerCaseEmail = loginEmail.toLowerCase();
-
 //Strip Unneccessary Spaces
 const trimmedEmail = lowerCaseEmail.trim();
 console.log(trimmedEmail);
+
+// Use one statement to solve the email challenge
+
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+
