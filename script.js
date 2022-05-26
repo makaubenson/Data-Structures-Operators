@@ -805,3 +805,10 @@ console.log(airline.toLowerCase());
 console.log('BENSON'.toLowerCase());
 console.log(airline.toUpperCase());
 console.log('benson'.toUpperCase());
+
+// Fix Case Problem in a name
+const passenger = 'jOnAS'; //should be Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
