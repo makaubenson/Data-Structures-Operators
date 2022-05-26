@@ -905,3 +905,14 @@ capitalizeName('benson makau katumo');
 const message = 'Go to gate 23!';
 console.log(message.padStart(25, '+'));
 console.log(message.padEnd(25, '+'));
+
+const maskCreditCard = function (number) {
+  const str = number + ''; //converting the number to string
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
+console.log(maskCreditCard(752565825));
+console.log(maskCreditCard(7525658256586585));
+console.log(maskCreditCard(7525658256586585));
+console.log(maskCreditCard(6524877524587));
+console.log(maskCreditCard(3278411587991254));
