@@ -264,3 +264,7 @@
 - `const announcement = 'All passengers come to boarding door 23. Boarding door 23!';`
 - `console.log(announcement.replaceAll('door', 'gate'));`
 - `replaceAll()` - replaces all instances of a string defined in the function. Like the `door` instance above.
+
+### Method 2: Regular Expression
+
+- `console.log(announcement.replace(/door/g, 'gate'));`

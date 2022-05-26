@@ -842,6 +842,10 @@ const priceGB = '288,97£';
 const priceUS = priceGB.replace(',', '.').replace('£', '$');
 console.log(priceUS);
 
+//Replace Multiple Instances
 const announcement =
   'All passengers come to boarding door 23. Boarding door 23!';
 console.log(announcement.replaceAll('door', 'gate'));
+
+//Use Regular Expressions
+console.log(announcement.replace(/door/g, 'gate'));
