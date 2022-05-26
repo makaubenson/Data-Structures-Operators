@@ -849,3 +849,11 @@ console.log(announcement.replaceAll('door', 'gate'));
 
 //Use Regular Expressions
 console.log(announcement.replace(/door/g, 'gate'));
+
+// includes(), startsWith() and endsWith() -Booleans
+const plane = 'A320neo';
+console.log(plane.includes('A320'));
+console.log(plane.startsWith('A53'));
+console.log(plane.startsWith('A3'));
+console.log(plane.endsWith('A3'));
+console.log(plane.endsWith('neo'));
