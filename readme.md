@@ -236,5 +236,9 @@
 
 ## slice()
 
+- First argument is that beggining value.
+- The last argument is the end value and not included in the string
 - `console.log(airline.slice(4)); // extracts string as from the 4th index`. `//Air Portugal`
 - `console.log(airline.slice(4, 7)); // extracts string as from the 4th index to 6th index. // Air`
+- slice cant mutate or change the string. It just returns a new string nothing else.
+- length of the extracted string is `end - begginning value`

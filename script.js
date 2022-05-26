@@ -778,3 +778,21 @@ console.log(airline.lastIndexOf('P')); // 8 Prints last occurence of 'P'
 //slice()
 console.log(airline.slice(4)); // extracts string as from the 4th index. //Air Portugal
 console.log(airline.slice(4, 7)); // extracts string as from the 4th index to 6th index. //Air
+console.log(airline.slice(0, airline.indexOf(' '))); // extracts string as from the 0 index to the place with space. //TAP
+console.log(airline.slice(airline.lastIndexOf(' ') + 1)); // extracts string as from the 0 index to the place with space. //TAP
+console.log(airline.slice(-2)); //al
+console.log(airline.slice(1, -1)); //al
+
+const checkMiddleSeat = function (seat) {
+  //B AND E are the middle seats
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') {
+    console.log('You got the middle seat😃');
+  } else {
+    console.log('You got lucky❤');
+  }
+};
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
